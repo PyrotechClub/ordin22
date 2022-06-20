@@ -5,73 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css" />
 
-    <!--Bootstrap-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<!---JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
     <title>Ordin@trix 22.0</title>
   </head>
 
-  <body>
+  <body onload="myFunction()">
     <!-- NAVBAR -->
 
+     <!---  LOADER   --->
+
+<div class="load" id="load">
+  <center>
+     <div class="loader-rectangle">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+     </div>
+  </center>
+</div>
+
+<div class="mainBod" id="mainBod"> 
     <div class="nav">
       <a href="#about"> General Guidelines</a>
       <a href="#events"> Events</a>
       <a href="#team"> Our Team </a>
     </div>
     <div class="home">
-      <img src="images/logo-text.png" />
+      <center></center><img src="images/logo-text.png" /></center>
     </div>
     <!--EVENTS-->
 
     <div class="events">
-      <div class="left">
-        <h2>Event Name</h2>
-        <p>
-          Lorem ipsum dolor sit amet. Aut odit numquam aut earum explicabo 33
-          quaerat nisi qui facilis fugiat et ratione reprehenderit qui similique
-          excepturi et ratione laborum? Et suscipit cumque sit labore dicta et
-          quia omnis At distinctio excepturi. Est quod consectetur ad error
-          voluptas aut Quis ut cumque neque et voluptatum mollitia. Ad
-          voluptatem pariatur ex quis libero ut velit architecto. Aut tempora
-          rerum non rerum deleniti ab nemo cupiditate nam tempore totam! Sit
-          labore dolor vel suscipit nobis est distinctio dolor non dolore
-          veritatis ut soluta iste est nihil facere.
-        </p>
-      </div>
-      <div class="right">
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Left</button>
-          <button type="button" class="btn btn-secondary">Middle</button>
-          <button type="button" class="btn btn-secondary">Right</button>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Left</button>
-          <button type="button" class="btn btn-secondary">Middle</button>
-          <button type="button" class="btn btn-secondary">Right</button>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Left</button>
-          <button type="button" class="btn btn-secondary">Middle</button>
-          <button type="button" class="btn btn-secondary">Right</button>
-        </div>
-      </div>
+<div class="row">
+
+  <div class="col-md-7">
+
+    <div class="comp active">
+    <h1>Innov@trix</h1>
+    <p> Classes: 9-12 <br>
+      No of students in a team: 3-4 <br>
+      No of team allowed per school: 1 <br>
+      Mode : Prelims- Submission based ; Finals-Offline <br> <br>
+      
+      ROUND 1 (PRELIMS)
+
+      Innovate a business idea/ product/ service, providing a solution to the problem given in the prompt.
+      
+      Deliverables (5 in total)
+      3-D model/ UI design
+      Posters (minimum 2)
+      Logo
+      Trailer/ Advertisement/ Commercial (any music can be used, but additional points for self-made audio; use of templates is strictly prohibited)
+      Website / App (choose 1)
+      
+      Prompts (choose 1)
+      AI in farming
+      Automation in hazardous jobs (like mining, etc)
+      AI in cryptocurrency
+      
+      The deliverables must be uploaded in a Google Drive folder and be submitted by 12 noon, 24 July 2022
+      Round 1 result declaration: 29  July 2022
+      
+      Please note: if the audio is self-made, you will be required to send the mp3 file along with the project file of the audio for cross-checking. 
+      
+      Judgement criteria:
+      Quality of deliverables
+      Originality/ Creativity
+      Business Idea
+      Problem solving and solution
+      </p>
     </div>
+
+    <div class="comp">
+      
+      </div>
+  </div>
+
+  <div class="col-md-5">
+    <center>
+      <h1> Events</h1>
+      <center><div class="line"></div></center>
+
+      <div class="wrapper">
+        <div class="box"> <span class="noselect"> INNOV@TRIX </span></div>
+        <div class="box"> CINEM@TRIX </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </center>
+    </div>
+
+  </div>
+
+  </div>
+
+</div>
     <!---LINKS-->
 
     <script

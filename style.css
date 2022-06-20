@@ -6,10 +6,6 @@
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  background-image: url("images/bg2.jpg");
-  background-size: cover;
   padding: 0;
 }
 
@@ -17,6 +13,128 @@ a {
   text-decoration: none !important;
 }
 
+/*  LOADER */
+
+.load {
+  height: 100vh;
+  width: 100%;
+  background-color: beige;
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* OVERLAY */
+
+.mainBod {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: beige;
+  text-align: center;
+}
+
+.mainBod::before {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/bg2.jpg");
+  background-position: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.loader-rectangle {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  width: 50px;
+  height: 90px;
+}
+
+/* RECTANGLE LOADER */
+
+.loader-rectangle div {
+  background-color: goldenrod;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  animation: rectangle-loading 1.2s infinite ease-in-out;
+  -webkit-animation: rectangle-loading 1.2s infinite ease-in-out;
+  -moz-animation: rectangle-loading 1.2s infinite ease-in-out;
+  -o-animation: rectangle-loading 1.2s infinite ease-in-out;
+}
+
+.loader-rectangle .rect2 {
+  animation-delay: -1.1s;
+  -webkit-animation-delay: -1.1s;
+  -moz-animation-delay: -1.1s;
+  -webkit-animation-delay: -1.1s;
+}
+
+.loader-rectangle .rect3 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+  -o-animation-delay: -1s;
+}
+
+.loader-rectangle .rect4 {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+  -moz-animation-delay: -0.9s;
+  -o-animation-delay: -0.9s;
+}
+
+.loader-rectangle .rect5 {
+  animation-delay: -0.8s;
+  -webkit-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
+  -o-animation-delay: -0.8s;
+}
+
+@keyframes rectangle-loading {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+
+  20% {
+    transform: scaleY(1);
+  }
+}
+
+@-moz-keyframes rectangle-loading {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+
+  20% {
+    transform: scaleY(1);
+  }
+}
+
+@-o-keyframes rectangle-loading {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+
+  20% {
+    transform: scaleY(1);
+  }
+}
+
+/* NAVBAR */
 .nav {
   background-color: transparent;
   width: 100%;
@@ -31,51 +149,106 @@ a {
 
 .nav a {
   color: #444;
-  padding: 2vh;
+  padding: 1vh;
+  margin-left: 5vh;
   text-decoration: none;
-  font-size: 3.5vh;
-  font-family: "Dosis", sans-serif;
+  font-size: 3vh;
+  font-family: "Cinzel", serif;
   font-weight: 800;
 }
 
 .nav a:hover {
-  color: #444;
-  border-bottom: 2px solid #444;
+  color: goldenrod;
   transition: 0.4s;
 }
 
 .home {
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   padding-top: 9vw;
   text-align: center;
 }
 
 .home img {
+  padding-top: 10vh;
   padding-bottom: 30vh;
 }
 
+/*EVENTS*/
+
+.line {
+  background-image: url(images/line.jpg);
+  height: 1vh;
+  width: 40%;
+  margin-bottom: 5vh;
+}
+
 .events {
-  width: 100%;
-  padding-bottom: 5vw;
-  background-color: beige;
-  text-align: center;
-  padding: 20vh;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
-.left {
-  width: 50%;
-  float: left;
+.events h1 {
+  font-family: "Cinzel", serif;
+  font-size: 8vh;
+  padding-bottom: 3vh;
 }
 
-.right {
-  width: 50%;
-  float: right;
+.comp {
+  display: none;
 }
 
-.btn-group {
-  width: 100vh;
-  height: 20vh;
-  border-radius: 0px;
+.comp.active {
+  display: block;
+}
+
+/* GRID */
+
+.col-md-5 {
   background-color: #444;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
+  color: beige;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 23vh 23vh 23vh;
+  background-color: #444;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif;
+  padding-right: 3vh;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 2.5vh;
+  margin: 1vh;
+  padding-top: 8vh;
+  cursor: pointer;
+  transition: 1s;
+  position: relative;
+  text-align: center;
+}
+
+.box:hover {
+  background: goldenrod;
+  border: 1px solid #444;
+}
+
+/*TEXT CONTENT*/
+.events .comp {
+  padding: 5vh;
+}
+
+.events .comp p {
+  text-align: left;
+  font-size: 2.2vh;
 }
