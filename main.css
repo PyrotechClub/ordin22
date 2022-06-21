@@ -1,19 +1,55 @@
-* {
-  margin: 0;
-  padding: 0;
+:root{
+  --not-gold:#c3945c;
+}
+
+/*PREREQUISITES*/
+*{
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
   outline: none !important;
 }
 
-body {
-  padding: 0;
+hr {
+  width: 85%;
+  transition: 0.4s !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.left {
+  float: left !important;
 }
 
 a {
   text-decoration: none !important;
+  color: #fff;
 }
 
-/*  LOADER */
+html {
+scroll-behavior:smooth;
+}
+
+body{
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+/*  LOADER 
 
 .load {
   height: 100vh;
@@ -23,7 +59,9 @@ a {
   padding-top: 20%;
 }
 
-/* OVERLAY */
+*/
+
+/* OVERLAY 
 
 .mainBod {
   display: none;
@@ -56,9 +94,9 @@ a {
   width: 50px;
   height: 90px;
 }
+*/
 
-/* RECTANGLE LOADER */
-
+/* RECTANGLE LOADER 
 .loader-rectangle div {
   background-color: goldenrod;
   height: 100%;
@@ -133,8 +171,9 @@ a {
     transform: scaleY(1);
   }
 }
+*/
 
-/* NAVBAR */
+/* NAVBAR 
 .nav {
   background-color: transparent;
   width: 100%;
@@ -172,8 +211,9 @@ a {
   padding-top: 10vh;
   padding-bottom: 30vh;
 }
+*/
 
-/*EVENTS*/
+/*EVENTS
 
 .line {
   background-image: url(images/line.jpg);
@@ -202,8 +242,9 @@ a {
 .comp.active {
   display: block;
 }
+*/
 
-/* GRID */
+/* GRID 
 
 .col-md-5 {
   background-color: #444;
@@ -242,8 +283,9 @@ a {
   background: goldenrod;
   border: 1px solid #444;
 }
+*/
 
-/*TEXT CONTENT*/
+/*TEXT CONTENT
 .events .comp {
   padding: 5vh;
 }
@@ -251,4 +293,60 @@ a {
 .events .comp p {
   text-align: left;
   font-size: 2.2vh;
+}
+*/
+
+/*EVENTS*/
+.events{ 
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+}
+
+.events h1{
+  color: var(--not-gold);
+  font-size: 50px;
+}
+
+.events .section-hr{
+  color: var(--not-gold);
+  padding-bottom: 40px;
+  width: 40%;
+}
+
+.events .flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.events .row{
+  margin-bottom: 10px;
+}
+
+.events .nav-link{
+  width: 100%;
+  background-color: #000 !important;
+  border: transparent solid 3px;
+  border-radius: 0px;
+  color: #eee;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.events .nav-link.active{
+  background-color: #222;
+  border-color: #c3945c !important;
+  color: #eee !important;
+}
+
+.events .tab-pane{
+  margin-left: 50px;
+}
+
+.events .tab-pane h1{
+  color: #eee;
+  font-size: 30px;
 }
