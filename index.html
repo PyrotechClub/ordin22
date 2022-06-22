@@ -1,208 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link href="main.css" type="text/css" rel="stylesheet">
-        <script src="index.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Ordin@trix 22.0</title>
   </head>
 
   <body onload="myFunction()">
-    <!-- NAVBAR -->
-
-     <!---  LOADER   
-
-<div class="load" id="load">
-  <center>
-     <div class="loader-rectangle">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-     </div>
-  </center>
-</div> -->
-
-<!--<div class="mainBod" id="mainBod"> 
-    <div class="nav">
-      <a href="#about"> General Guidelines</a>
-      <a href="#events"> Events</a>
-      <a href="#team"> Our Team </a>
-    </div>
-    <div class="home">
-      <center></center><img src="images/logo-text.png" /></center>
-    </div> -->
-
-
-    <!--EVENTS
-
+    <!--EVENTS-->
     <div class="events">
-<div class="row">
+      <center>
+        <center><h1>EVENTS IN STORE</h1></center>
+        <hr class="section-hr" />
 
-  <div class="col-md-7">
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <div class="row flex-container">
+              <div class="col-md-4">
+                <button
+                  class="nav-link active"
+                  id="innovate@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#innovate"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                >
+                  <center>Innovate@trix</center>
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="cinema@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#cinema"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Cinema@trix
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="game@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#game"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Game@trix
+                </button>
+              </div>
+            </div>
 
-    <div class="comp active">
-    <h1>Innov@trix</h1>
-    <p> Classes: 9-12 <br>
-      No of students in a team: 3-4 <br>
-      No of team allowed per school: 1 <br>
-      Mode : Prelims- Submission based ; Finals-Offline <br> <br>
-      
-      ROUND 1 (PRELIMS)
+            <div class="row flex-container">
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="script@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#script"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Script@trix
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="bot@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#bot"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Bot@trix
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="anim@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#anime"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Anim@trix
+                </button>
+              </div>
+            </div>
 
-      Innovate a business idea/ product/ service, providing a solution to the problem given in the prompt.
-      
-      Deliverables (5 in total)
-      3-D model/ UI design
-      Posters (minimum 2)
-      Logo
-      Trailer/ Advertisement/ Commercial (any music can be used, but additional points for self-made audio; use of templates is strictly prohibited)
-      Website / App (choose 1)
-      
-      Prompts (choose 1)
-      AI in farming
-      Automation in hazardous jobs (like mining, etc)
-      AI in cryptocurrency
-      
-      The deliverables must be uploaded in a Google Drive folder and be submitted by 12 noon, 24 July 2022
-      Round 1 result declaration: 29  July 2022
-      
-      Please note: if the audio is self-made, you will be required to send the mp3 file along with the project file of the audio for cross-checking. 
-      
-      Judgement criteria:
-      Quality of deliverables
-      Originality/ Creativity
-      Business Idea
-      Problem solving and solution
-      </p>
+            <div class="row flex-container">
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="quest@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#quest"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Quest@trix
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="crypt@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#crypt"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Crypt@trix
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  class="nav-link"
+                  id="snap@trix"
+                  data-bs-toggle="pill"
+                  data-bs-target="#snap"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Snap@trix
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="innovate"
+              role="tabpanel"
+              aria-labelledby="innovate@trix"
+              tabindex="0"
+            >
+              <h1>INNOVATE@TRIX</h1>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="cinema"
+              role="tabpanel"
+              aria-labelledby="cinema@trix"
+              tabindex="0"
+            >
+              okay
+            </div>
+            <div
+              class="tab-pane fade"
+              id="game"
+              role="tabpanel"
+              aria-labelledby="game@trix"
+              tabindex="0"
+            >
+              E
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="script"
+              role="tabpanel"
+              aria-labelledby="script@trix"
+              tabindex="0"
+            >
+              disappointed
+            </div>
+            <div
+              class="tab-pane fade"
+              id="bot"
+              role="tabpanel"
+              aria-labelledby="bot@trix"
+              tabindex="0"
+            >
+              yes
+            </div>
+            <div
+              class="tab-pane fade"
+              id="anime"
+              role="tabpanel"
+              aria-labelledby="anim@trix"
+              tabindex="0"
+            >
+              ok
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="quest"
+              role="tabpanel"
+              aria-labelledby="quest@trix"
+              tabindex="0"
+            >
+              quest
+            </div>
+            <div
+              class="tab-pane fade"
+              id="crypt"
+              role="tabpanel"
+              aria-labelledby="crypt@trix"
+              tabindex="0"
+            >
+              ndjkdnndcheius
+            </div>
+            <div
+              class="tab-pane fade"
+              id="snap"
+              role="tabpanel"
+              aria-labelledby="snap@trix"
+              tabindex="0"
+            >
+              snap
+            </div>
+          </div>
+        </div>
+      </center>
     </div>
-
-    <div class="comp">
-      
-      </div>
-  </div>
-
-  <div class="col-md-5">
-    <center>
-      <h1> Events</h1>
-      <center><div class="line"></div></center>
-
-      <div class="wrapper">
-        <div class="box"> <span class="noselect"> INNOV@TRIX </span></div>
-        <div class="box"> CINEM@TRIX </div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-    </center>
-    </div>
-
-  </div>
-
-  </div>
-
-</div> -->
-
-<!--EVENTS-->
-<div class="events">
-  <center>
-  <center><h1>EVENTS IN STORE</h1></center>
-  <hr class="section-hr">
-
-<div class="d-flex align-items-start">
-<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-<div class="row flex-container">
-  <div class="col-md-4">
-<button class="nav-link active" id="innovate@trix" data-bs-toggle="pill" data-bs-target="#innovate" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><center>Innovate@trix</center></button>
-</div>
-<div class="col-md-4">
-<button class="nav-link" id="cinema@trix" data-bs-toggle="pill" data-bs-target="#cinema" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cinema@trix</button>
-</div>
-<div class="col-md-4">
-  <button class="nav-link" id="game@trix" data-bs-toggle="pill" data-bs-target="#game" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Game@trix</button>
-  </div>
-</div>
-
-<div class="row flex-container">
-  <div class="col-md-4">
-    <button class="nav-link" id="script@trix" data-bs-toggle="pill" data-bs-target="#script" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Script@trix</button>
-    </div>
-<div class="col-md-4">
-<button class="nav-link" id="bot@trix" data-bs-toggle="pill" data-bs-target="#bot" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Bot@trix</button>
-</div>
-<div class="col-md-4">
-  <button class="nav-link" id="anim@trix" data-bs-toggle="pill" data-bs-target="#anime" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Anim@trix</button>
-  </div>
-</div>
-
-<div class="row flex-container">
-  <div class="col-md-4">
-    <button class="nav-link" id="quest@trix" data-bs-toggle="pill" data-bs-target="#quest" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Quest@trix</button>
-    </div>
-<div class="col-md-4">
-<button class="nav-link" id="crypt@trix" data-bs-toggle="pill" data-bs-target="#crypt" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Crypt@trix</button>
-</div>
-<div class="col-md-4">
-  <button class="nav-link" id="snap@trix" data-bs-toggle="pill" data-bs-target="#snap" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Snap@trix</button>
-  </div>
-</div>
-
-</div>
-<div class="tab-content" id="v-pills-tabContent">
-<div class="tab-pane fade show active" id="innovate" role="tabpanel" aria-labelledby="innovate@trix" tabindex="0">
-  <h1>INNOVATE@TRIX</h1>
-</div>
-<div class="tab-pane fade" id="cinema" role="tabpanel" aria-labelledby="cinema@trix" tabindex="0">
-  okay
-</div>
-<div class="tab-pane fade" id="game" role="tabpanel" aria-labelledby="game@trix" tabindex="0">
-  E
-</div>
-
-<div class="tab-pane fade" id="script" role="tabpanel" aria-labelledby="script@trix" tabindex="0">
-  disappointed
-</div>
-<div class="tab-pane fade" id="bot" role="tabpanel" aria-labelledby="bot@trix" tabindex="0">
-  yes
-</div>
-<div class="tab-pane fade" id="anime" role="tabpanel" aria-labelledby="anim@trix" tabindex="0">
-  ok
-</div>
-
-<div class="tab-pane fade" id="quest" role="tabpanel" aria-labelledby="quest@trix" tabindex="0">
-  quest
-</div>
-<div class="tab-pane fade" id="crypt" role="tabpanel" aria-labelledby="crypt@trix" tabindex="0">
-  ndjkdnndcheius
-</div>
-<div class="tab-pane fade" id="snap" role="tabpanel" aria-labelledby="snap@trix" tabindex="0">
-  snap
-</div>
-
-</div>
-</div>
-  </center>
-</div>
-
 
     <!---LINKS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>

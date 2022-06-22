@@ -1,9 +1,9 @@
-:root{
-  --not-gold:#c3945c;
+:root {
+  --not-gold: #c3945c;
 }
 
 /*PREREQUISITES*/
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -41,10 +41,10 @@ a {
 }
 
 html {
-scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: var(--white);
   overflow-x: hidden;
 }
@@ -173,131 +173,8 @@ body{
 }
 */
 
-/* NAVBAR 
-.nav {
-  background-color: transparent;
-  width: 100%;
-  padding: 2vh;
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  text-decoration: none;
-  margin-top: none;
-  padding-top: none;
-}
-
-.nav a {
-  color: #444;
-  padding: 1vh;
-  margin-left: 5vh;
-  text-decoration: none;
-  font-size: 3vh;
-  font-family: "Cinzel", serif;
-  font-weight: 800;
-}
-
-.nav a:hover {
-  color: goldenrod;
-  transition: 0.4s;
-}
-
-.home {
-  height: 100vh;
-  padding-top: 9vw;
-  text-align: center;
-}
-
-.home img {
-  padding-top: 10vh;
-  padding-bottom: 30vh;
-}
-*/
-
-/*EVENTS
-
-.line {
-  background-image: url(images/line.jpg);
-  height: 1vh;
-  width: 40%;
-  margin-bottom: 5vh;
-}
-
-.events {
-  height: 100vh;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-}
-
-.events h1 {
-  font-family: "Cinzel", serif;
-  font-size: 8vh;
-  padding-bottom: 3vh;
-}
-
-.comp {
-  display: none;
-}
-
-.comp.active {
-  display: block;
-}
-*/
-
-/* GRID 
-
-.col-md-5 {
-  background-color: #444;
-  padding-top: 5vh;
-  margin-bottom: 5vh;
-  color: beige;
-}
-
-.wrapper {
-  height: 100vh;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 23vh 23vh 23vh;
-  background-color: #444;
-  color: #444;
-  margin: 0;
-  padding: 0;
-  font-family: "Cinzel", serif;
-  padding-right: 3vh;
-}
-
-.box {
-  background-color: #444;
-  color: #fff;
-  font-size: 2.5vh;
-  margin: 1vh;
-  padding-top: 8vh;
-  cursor: pointer;
-  transition: 1s;
-  position: relative;
-  text-align: center;
-}
-
-.box:hover {
-  background: goldenrod;
-  border: 1px solid #444;
-}
-*/
-
-/*TEXT CONTENT
-.events .comp {
-  padding: 5vh;
-}
-
-.events .comp p {
-  text-align: left;
-  font-size: 2.2vh;
-}
-*/
-
 /*EVENTS*/
-.events{ 
+.events {
   width: 100%;
   overflow-x: hidden;
   background-color: #111;
@@ -305,27 +182,27 @@ body{
   padding: 30px;
 }
 
-.events h1{
+.events h1 {
   color: var(--not-gold);
   font-size: 50px;
 }
 
-.events .section-hr{
+.events .section-hr {
   color: var(--not-gold);
   padding-bottom: 40px;
   width: 40%;
 }
 
-.events .flex-container{
+.events .flex-container {
   display: flex;
   flex-direction: row;
 }
 
-.events .row{
+.events .row {
   margin-bottom: 10px;
 }
 
-.events .nav-link{
+.events .nav-link {
   width: 100%;
   background-color: #000 !important;
   border: transparent solid 3px;
@@ -336,17 +213,17 @@ body{
   text-align: center;
 }
 
-.events .nav-link.active{
+.events .nav-link.active {
   background-color: #222;
   border-color: #c3945c !important;
   color: #eee !important;
 }
 
-.events .tab-pane{
+.events .tab-pane {
   margin-left: 50px;
 }
 
-.events .tab-pane h1{
+.events .tab-pane h1 {
   color: #eee;
   font-size: 30px;
 }
