@@ -193,12 +193,41 @@ body {
 }
 */
 
+/*UPDATES*/
+
+.updates {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #111;
+  padding: 30px;
+}
+
+.updates h1 {
+  color: var(--not-gold);
+  font-size: 50px;
+}
+
+.updates .section-hr {
+  color: var(--not-gold);
+  padding-bottom: 40px;
+  width: 40%;
+}
+
+.updates p {
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+}
+
+.updates iframe {
+  display: flex;
+}
+
 /*EVENTS*/
 .events {
   width: 100%;
   overflow-x: hidden;
   background-color: #111;
-  color: #fff;
   padding: 30px;
 }
 
