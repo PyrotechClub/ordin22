@@ -1,5 +1,6 @@
 :root {
   --not-gold: #c3945c;
+  --white: #eee;
 }
 
 /*PREREQUISITES*/
@@ -47,6 +48,25 @@ html {
 body {
   background-color: var(--white);
   overflow-x: hidden;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
 }
 
 /*  LOADER 
@@ -207,7 +227,7 @@ body {
   background-color: #000 !important;
   border: transparent solid 3px;
   border-radius: 0px;
-  color: #eee;
+  color: var(--white);
   margin: 10px;
   padding: 30px;
   text-align: center;
@@ -216,7 +236,7 @@ body {
 .events .nav-link.active {
   background-color: #222;
   border-color: #c3945c !important;
-  color: #eee !important;
+  color: var(--white) !important;
 }
 
 .events .tab-pane {
@@ -231,26 +251,26 @@ body {
 }
 
 .events .tab-pane h2 {
-  color: #eee;
+  color: var(--white);
   font-size: 20px;
   text-align: left;
 }
 
 .events .tab-pane p {
-  color: #eee;
+  color: var(--white);
   font-size: 16px;
   text-align: left;
 }
 
 .events .tab-pane ul {
-  color: #eee;
+  color: var(--white);
   font-size: 16px;
   text-align: left;
 }
 
 .events table,
 td {
-  border: 1px solid #eee;
+  border: 1px solid var(--white);
   padding: 2vh;
 }
 
@@ -267,6 +287,10 @@ td {
 .events .show-more {
   padding: 1.5vh 5vh;
   background-color: var(--not-gold);
-  color: #eee;
+  color: var(--white);
   font-size: 16px;
+}
+
+.event .show-more button:hover {
+  background-color: #f59c2f;
 }
