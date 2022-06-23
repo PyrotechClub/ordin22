@@ -226,4 +226,47 @@ body {
 .events .tab-pane h1 {
   color: #eee;
   font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.events .tab-pane h2 {
+  color: #eee;
+  font-size: 20px;
+  text-align: left;
+}
+
+.events .tab-pane p {
+  color: #eee;
+  font-size: 16px;
+  text-align: left;
+}
+
+.events .tab-pane ul {
+  color: #eee;
+  font-size: 16px;
+  text-align: left;
+}
+
+.events table,
+td {
+  border: 1px solid #eee;
+  padding: 2vh;
+}
+
+/* READ MORE BUTTON */
+
+.more {
+  display: none;
+}
+
+.more2 {
+  display: none;
+}
+
+.events .show-more {
+  padding: 1.5vh 5vh;
+  background-color: var(--not-gold);
+  color: #eee;
+  font-size: 16px;
 }
