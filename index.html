@@ -14,23 +14,48 @@
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 
     <title>Ordin@trix 22.0</title>
   </head>
 
   <body onload="myFunction()">
 
-    <div class="home">
+    <!--HEADS MODALS-->
+
+<!--SAKINA-->
+<div class="modal fade" id="sakina" tabindex="-1" aria-labelledby="sakina" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="modal-img" src="images/placeholder.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--NAVYA-->
+<div class="modal fade" id="navya" tabindex="-1" aria-labelledby="navya" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="modal-img" src="images/placeholder.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--HOME-->
+
+    <div class="home" id="home">
       <center><img src="images/logo-white.png"></center>
 
     <div class="row">
@@ -72,17 +97,11 @@
 
     </div>
 
-<!--ABOUT-->
-
-<div class="about">
-  
-</div>
-
     <!--UPDATES-->
     <div class="updates">
       <center><h1>UPDATES</h1>
         <hr class="section-hr" /></center>
-        <p> All updates will be posted here and on our facebook page. Please
+        <p> All updates will be posted here and on our <a href="https://www.instagram.com/pyrotech_tisvv/" target="_blank" rel="noopener noreferrer">Instagram page</a>. Please
           keep checking back </p>
 <br> <br>
 
@@ -92,7 +111,7 @@
         <!--JUST ADDED LAST YEAR FACEBOOK PAGE AS PLACEHOLDER- INSTAGRAM PAGE WILL BE ADDED HERE-->
         <center><iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOrdinatrix-102648624844688%2F&tabs=timeline&width=&height=400&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
-          height="500"
+          height="500" width="100%"
           scrolling="no"
           allowTransparency="true"
           allow="encrypted-media"
@@ -137,7 +156,34 @@
     </div>
     <br />
 
+<!--ABOUT-->
 
+<div class="about">
+  <center><h1> ABOUT US</h1>
+  <hr class="section-hr"></center> 
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <p> <span class="attention-seeker"> It all started 18 years ago... </span> <br> A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event with students participating from China, Muscat, Japan and other countries. </p>
+        <br>
+        <p> The event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju
+          Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
+    </div>
+    <div class="col-md-2">
+      <center><img src="images/pyro-logo.png"></center>
+    </div>
+    <div class="col-md-4">
+      <p class="right"> <span class="attention-seeker"> Ordin@trix has come a long way </span> and so have the PYROTECHS.
+        They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into
+        Ordin@trix.</p>
+        <br> 
+        <p class="right">PYROTECH members are an elite team of student computer enthusiasts.
+          They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.</p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+</div>
 
     <!--EVENTS-->
     <div class="events">
@@ -757,6 +803,80 @@
         </div>
       </center>
     </div>
+
+    <!--TEASER-->
+    <div class="teaser">
+
+      <center><h1> A GLIMPSE...</h1>
+        <hr class="section-hr"></center> 
+
+      <center>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <video class="movie" width="100%" controls>
+                    <source src="" type="video/mp4">
+                    <source src="" type="video/ogg">
+                </video>
+                <br>
+                <hr>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </center>
+    </div>
+
+    <!--TEAMMMM-->
+
+    <div class="team">
+      <center><h1> THE A-TEAM</h1>
+        <hr class="section-hr"></center> 
+  
+      <!--ROW 1-->
+        <div class="row">
+          <div class="col-md-2"></div>
+
+          <!--SAKINA-->
+          <div class="col-md-4">
+            <div class="heads-card">
+              <center><div class="hover-img-container">
+                <img class="heads-img" src="images/placeholder.jpg">
+                <div class="img-overlay" type="button"  data-bs-toggle="modal" data-bs-target="#sakina">
+                  <div class="img-text">Click to see full image</div>
+                </div>
+              </div></center>
+              <h4> Sakina Nadeem</h4>
+              <h5> President</h5>
+              <h5> A line about the person</h5>
+              <center><hr class="heads-hr"></center>
+              <p> <img class="email" src="images/envelope2.png"> insertemailid@gmail.com</p>
+            </div>
+          </div>
+
+          <!--NAVYA-->
+          <div class="col-md-4">
+            <div class="heads-card">
+              <center><div class="hover-img-container">
+                <img class="heads-img" src="images/placeholder.jpg">
+                <div class="img-overlay" type="button"  data-bs-toggle="modal" data-bs-target="#navya">
+                  <div class="img-text">Click to see full image</div>
+                </div>
+              </div></center>
+              <h4>Navya Arora</h4>
+              <h5> Vice-President </h5>
+              <h5> A line about the person</h5>
+              <center><hr class="heads-hr"></center>
+              <p> <img class="email" src="images/envelope2.png"> insertemailid@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+
+
+      </div>
+
+
+  
 
     <!---LINKS-->
     <script
