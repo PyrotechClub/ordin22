@@ -202,6 +202,12 @@ body {
   background-image: url(images/banda.png);
   background-position: top right;
   padding: 30px;
+  overflow-y: hidden;
+}
+
+.home img {
+  margin-top: 20vh;
+  height: 18vh;
 }
 
 .coming-soon {
@@ -211,12 +217,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--sort-of-black);
+  background-color: var(--white);
   border-radius: 20px;
   text-align: center;
-  margin-top: 60vh;
-  color: var(--white);
-  /* box-shadow: 5px 5px 15px var(--not-gold); */
+  margin-top: 20vh;
+  color: var(--sort-of-black);
   -webkit-box-shadow: 0 0 10px var(--not-gold);
   box-shadow: 0 0 10px var(--not-gold);
 }
@@ -232,7 +237,7 @@ body {
 .hour,
 .minute,
 .second {
-  font-size: 3vh;
+  font-size: 4vh;
   text-align: center;
 }
 
@@ -274,6 +279,7 @@ body {
 .updates iframe {
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .updates2 {
