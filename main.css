@@ -262,8 +262,8 @@ body {
 
 .updates h1 {
   color: var(--not-gold);
-  font-size: 50px;
-  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .updates .section-hr {
@@ -327,8 +327,8 @@ body {
 
 .about h1 {
   color: var(--not-gold);
-  font-size: 50px;
-  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
   text-align: center;
 }
 
@@ -373,8 +373,8 @@ body {
 
 .events h1 {
   color: var(--not-gold);
-  font-size: 50px;
-  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .events .section-hr {
@@ -482,8 +482,8 @@ td {
 .teaser h1,
 .team h1 {
   color: var(--not-gold);
-  font-size: 50px;
-  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
   text-align: center;
 }
 
@@ -596,7 +596,8 @@ td {
 
 .modal .btn {
   border: 1px solid var(--not-gold);
-  color: var(--not-gold);
+  color: var(--white);
+  background-color: var(--sort-of-black);
 }
 
 .modal .btn:hover {
