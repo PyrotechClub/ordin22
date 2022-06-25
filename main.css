@@ -2,6 +2,11 @@
   --not-gold: #d1aa3f;
   --white: #eee;
   --sort-of-black: #111;
+  --violet: #6f30c2;
+  --sapphire-blue: #0d6efd;
+  --aquamarne-blue: #4babd6;
+  --navy-blue: #0b0b45;
+  --gold-brown: #623900;
 }
 
 /*PREREQUISITES*/
@@ -14,6 +19,7 @@
 
 hr {
   width: 85%;
+  height: 2px;
   transition: 0.4s !important;
 }
 
@@ -47,7 +53,7 @@ html {
 }
 
 body {
-  background-color: var(--sort-of-black);
+  background-color: var(--white);
   overflow-x: hidden;
   padding: 0 !important;
 }
@@ -197,53 +203,78 @@ body {
 
 /*HOMEPAGE*/
 .home {
+  background-image: url(images/banda.png);
+  background-position: 100% 30%;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-image: url(images/banda.png);
-  background-position: top right;
   padding: 30px;
-  overflow-y: hidden;
+  display: flex;
+  justify-content: right;
 }
 
 .home img {
-  margin-top: 20vh;
-  height: 18vh;
+  margin-top: 30vh;
+  margin-left: 6vh;
+  width: 90%;
+}
+
+.home .btn {
+  border-radius: 30px;
+  margin-top: 5vh;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.home .btn:hover {
+  border: 1px solid var(--sapphire-blue);
+}
+
+/*TIMER*/
+
+.timer {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .coming-soon {
-  height: auto;
-  width: 100%;
+  height: 50vh;
+  width: 50%;
   padding: 4vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--white);
+  background-color: transparent;
   border-radius: 20px;
   text-align: center;
   margin-top: 20vh;
-  color: var(--sort-of-black);
-  -webkit-box-shadow: 0 0 10px var(--not-gold);
-  box-shadow: 0 0 10px var(--not-gold);
+  color: var(--navy-blue);
 }
 
 .coming-soon h2 {
-  font-size: 4vh;
+  font-size: 6vh;
   font-weight: bold;
   text-align: center;
   padding: 2vh;
+  margin-bottom: 8vh;
 }
 
 .day,
 .hour,
 .minute,
 .second {
-  font-size: 4vh;
+  font-size: 6vh;
   text-align: center;
 }
 
 .coming-soon .text {
-  font-size: 2vh;
+  font-size: 4vh;
 }
 
 .countdown {
@@ -256,29 +287,34 @@ body {
 .updates {
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--sort-of-black);
+  background-color: var(--white);
   padding: 30px;
 }
 
 .updates h1 {
-  color: var(--not-gold);
+  color: var(--gold-brown);
   font-size: 60px;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .updates .section-hr {
-  color: var(--not-gold);
+  color: var(--gold-brown);
   padding-bottom: 40px;
   width: 40%;
+  height: 2px;
 }
 
 .updates p {
-  color: var(--white);
+  color: var(--gold-brown);
   font-size: 20px;
   text-align: center;
 }
 
 .updates a {
+  color: var(--gold-brown);
+}
+
+.updates a:hover {
   color: var(--not-gold);
 }
 
@@ -305,7 +341,8 @@ body {
   margin-top: 0;
   padding: 2vh;
   padding-top: 1vh;
-  background-color: var(--white);
+  background-color: var(--gold-brown);
+  color: var(--white);
 }
 
 .updates .new {
@@ -320,27 +357,28 @@ body {
 
 .about {
   width: 100%;
+  height: 100vh;
   overflow-x: hidden;
-  background-color: var(--sort-of-black);
+  background-color: var(--white);
   padding: 30px;
 }
 
 .about h1 {
-  color: var(--not-gold);
+  color: var(--gold-brown);
   font-size: 60px;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
 }
 
 .about .section-hr {
-  color: var(--not-gold);
+  color: var(--gold-brown);
   padding-bottom: 40px;
   width: 40%;
   align-items: center;
 }
 
 .about p {
-  color: var(--white);
+  color: var(--gold-brown);
   font-size: 2.5vh;
   text-align: left;
 }
@@ -357,7 +395,7 @@ body {
 }
 
 .about .attention-seeker {
-  color: var(--not-gold);
+  color: var(--gold-brown);
   font-size: 4vh;
   font-family: 'Roboto Slab', serif;
 }
@@ -374,7 +412,7 @@ body {
 .events h1 {
   color: var(--not-gold);
   font-size: 60px;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .events .section-hr {
@@ -471,7 +509,7 @@ td {
 }
 
 /* TEASER  && TEAM*/
-.teaser,
+
 .team {
   width: 100%;
   overflow-x: hidden;
@@ -479,15 +517,13 @@ td {
   padding: 30px;
 }
 
-.teaser h1,
 .team h1 {
   color: var(--not-gold);
   font-size: 60px;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
 }
 
-.teaser .section-hr,
 .team .section-hr {
   color: var(--not-gold);
   padding-bottom: 40px;
