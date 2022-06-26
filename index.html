@@ -36,10 +36,31 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/solid.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/v4-shims.min.js"></script>
 
+<!--VANTA JS-->
+<script src="three.r119.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.birds.min.js" integrity="sha512-V2kLfMoZ0BGeoi172475o43xjiOz1NB4TMs0mdhUsv24xgxpf+A8hCGjdtN3+SCWNq6dMutc5f3D3OE7YNmdrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  VANTA.BIRDS({
+  el: '#vanta-canvas',
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.0,
+  minWidth: 200.0,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  colorMode: 'lerp',
+});
+</script>
+
+
+
     <title>Ordin@trix 22.0</title>
   </head>
 
   <body onload="myFunction()">
+
+   
 
     <!--HEADS MODALS-->
 
@@ -195,8 +216,10 @@
     </div>
     </div>
 
+
     <!--TIMER-->
-    <div class="timer">
+
+    <!-- <div class="timer">
       <section class="coming-soon">
         <div>
           <h2> Coming Soon! </h2>
@@ -228,20 +251,55 @@
         </div>
       </section>
  
-  </div>
+  </div> -->
     
+
 <!--ABOUT-->
 <div class="about">
   <center><h1> ABOUT US</h1>
   <hr class="section-hr"></center> 
   <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <p> <span class="attention-seeker"> It all started 18 years ago... </span> <br> A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event with students participating from China, Muscat, Japan and other countries. </p>
 
         <p> The event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju
           Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
         </div>
+    
+        <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <section class="coming-soon">
+        <div>
+          <h2> Coming Soon! </h2>
+
+          <div class="countdown">
+
+            <div class="container-day">
+              <h3 class="day">Time</h3>
+              <h3 class="text"> Day</h3>
+            </div>
+
+            <div class="container-hour">
+              <h3 class="hour">Time</h3>
+              <h3 class="text">Hours</h3>
+            </div>
+
+            <div class="container-minute">
+              <h3 class="minute">Time</h3>
+              <h3 class="text">Min</h3>
+            </div>
+
+            <div class="container-second">
+              <h3 class="second">Time</h3>
+              <h3 class="text">Sec</h3>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
     <div class="col-md-1"></div>
   </div>
 
@@ -897,7 +955,7 @@
 <div class="updates">
   <center><h1>UPDATES</h1>
     <hr class="section-hr" /></center>
-    <p> All updates will be posted here and on our <a href="https://www.instagram.com/pyrotech_tisvv/" target="_blank" rel="noopener noreferrer">Instagram page</a>. Please
+    <p> All updates will be posted here and on our <a href="https://www.instagram.com/pyrotech_tisvv/" target="_blank" rel="noopener noreferrer"><u>Instagram page</u></a>. Please
       keep checking back </p>
 <br> <br>
 
@@ -1151,12 +1209,10 @@
           <div class="col-md-2"></div>
         </div>
 
-
-        <!--END OF TEAM PAGE-->
       </div>
 
 
-  
+ 
 
     <!---LINKS-->
     <script
