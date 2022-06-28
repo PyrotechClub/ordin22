@@ -1,49 +1,17 @@
 'use strict';
 
 //LOADER
-var myVar;
-function myFunction() {
-  myVar = setTimeout(showPage, 1500);
-}
-
-function showPage() {
-  document.getElementById('load').style.display = 'none';
-  document.getElementById('mainBod').style.display = 'block';
-}
-
-//MORE TEXT
-
-// function showText() {
-//   const extraText = document.querySelector('.more');
-//   if (extraText.style.display === 'none') {
-//     extraText.style.display = 'block';
-//   } else {
-//     extraText.style.display = 'none';
-//   }
-// }
-
-function readMore(comp) {
-  let dots = document.querySelector(`.tab-pane[data-comp="${comp}"] .dots`);
-  let moreText = document.querySelector(`.tab-pane[data-comp="${comp}"] .more`);
-  let moreText2 = document.querySelector(
-    `.tab-pane[data-comp="${comp}"] .more2`
-  );
-  let btnText = document.querySelector(
-    `.tab-pane[data-comp="${comp}"] .show-more`
-  );
-
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
-    btnText.textContent = 'Read more';
-    moreText.style.display = 'none';
-    moreText2.style.display = 'none';
+jQuery(document).on("scroll", function () {
+  if ($(document).scrollTop() > 120) {
+      $(".navbar").css("background-color", "#222");
+      $(".nav-link").css("color", "#fff");
+      $(".nav-logo").css("filter", "none");
   } else {
-    dots.style.display = 'none';
-    btnText.textContent = 'Read less';
-    moreText.style.display = 'inline';
-    moreText2.style.display = 'inline';
+      $(".navbar").css("background-color", "transparent");
+      $(".nav-link").css("color", "#000");
+      $(".nav-logo").css("filter", "invert(100%)");
   }
-}
+});
 
 //TIMER
 
@@ -64,6 +32,8 @@ const countdown = () => {
   const textMinute = Math.floor((gap % hour) / minute);
   const textSecond = Math.floor((gap % minute) / second);
 
+  console.log(textDay, textHour, textMinute, textSecond);
+
   document.querySelector('.day').innerText = textDay;
   document.querySelector('.hour').innerText = textHour;
   document.querySelector('.minute').innerText = textMinute;
@@ -71,5 +41,3 @@ const countdown = () => {
 };
 
 setInterval(countdown, 1000);
-
-//VANTA JS
