@@ -111,8 +111,7 @@ body {
 
 .home-image {
   height: 90vh;
-  padding-top: 5vh;
-  text-align: center;
+  padding-top: 3vh;
 }
 
 .home-image img {
@@ -262,60 +261,63 @@ span.highlight-span {
 }
 
 /*EVENTS*/
+
 .events {
   width: 100%;
   overflow-x: hidden;
   padding: 30px;
+  margin-top: 15vh;
 }
 
 .events .box {
-  border: 3px #111 solid;
-  border-radius: 7px;
-  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 50px 20px;
   margin: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .events .icon {
   font-size: 90px;
   text-align: center;
-  color: #555;
+  color: #fff;
   padding: 20px;
 }
 
 .events h2 {
-  color: #000;
+  color: #fff;
   font-size: 23px;
-  font-family: 'apercu';
+  font-family: 'Open Sans', sans-serif;
 }
 
 .events h3 {
-  color: #000;
+  color: #fff;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  text-transform: capitalize;
 }
 
-.events h4 {
-  color: #fff;
-  background-color: #222;
-  font-size: 2.5vh;
+.events .event-link {
+  color: #ffffff;
+  border: #ccc 3px solid;
   width: 40%;
   padding: 7px;
-  border-radius: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  transition: 0.25s;
+}
+
+.event-link:hover {
+  background-color: #ccc;
+  color: #111;
 }
 
 .events .box:hover {
-  transition: 0.3s;
-  box-shadow: 3px 3px 3px #111;
+  box-shadow: 0px 3px 3px #111;
 }
 
-.events .section-hr {
-  padding-bottom: 30px;
-}
-
-.events .row {
-  padding-bottom: 30px;
+.event-a {
+  color: #aaa;
 }
 
 /*EVENTS*/
@@ -368,12 +370,7 @@ span.highlight-span {
   border-radius: 50%;
   margin: 3vh;
   cursor: pointer;
-  box-shadow: 5px 5px black;
   transition: 0.4s;
-}
-
-.team .heads-img:hover {
-  box-shadow: 5px 5px 4px black;
 }
 
 .team h3 {
@@ -396,7 +393,7 @@ span.highlight-span {
     opacity: 1;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -407,7 +404,7 @@ span.highlight-span {
     opacity: 1;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -418,7 +415,7 @@ span.highlight-span {
     opacity: 1;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -429,7 +426,7 @@ span.highlight-span {
     opacity: 1;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
