@@ -169,7 +169,6 @@ body {
   color: #000;
 }
 /*UPDATES*/
-
 .updates {
   width: 100%;
   overflow-x: hidden;
@@ -203,20 +202,28 @@ body {
   align-content: center;
   transition: 0.5s;
   text-align: left;
-  border-radius: 0;
-  margin: 1vh;
-  margin-top: 0;
-  padding: 2vh;
-  padding-top: 1vh;
-  background-color: var(--white);
+  border-radius: 10px;
+  border: transparent;
+  margin: 5px 10px;
+  padding: 17px;
+  background-color: #efefef;
+  line-height: 26px;
 }
 
 .updates .new {
   -webkit-animation: flicker 0.5s infinite;
-  animation: flicker 0.5s infinite;
-  color: #111;
-  font-weight: 800;
-  text-align: center;
+  animation: flicker 0.5s infinite; 
+  background-color: #444;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.updates2::-webkit-scrollbar {
+  display:none;
 }
 
 /*ABOUT US*/
@@ -233,7 +240,7 @@ body {
 }
 
 .about p {
-  font-size: 2.5vh;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -249,7 +256,7 @@ body {
 
 span.highlight-span {
   color: #111;
-  font-size: 4vh;
+  font-size: 31px;
   font-family: 'poppins', serif;
   margin-bottom: 20px;
 }
