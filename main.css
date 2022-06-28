@@ -261,6 +261,57 @@ span.highlight-span {
   margin-bottom: 20px;
 }
 
+/*EVENTS*/
+.events{
+  width: 100%;
+  overflow-x: hidden;
+  padding: 30px;
+}
+
+.events .box{
+  border: 3px #111 solid;
+  border-radius: 7px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.events .icon{
+  font-size: 90px;
+  text-align: center;
+  color: #555;
+  padding: 20px;
+}
+
+.events h2{
+  color: #000;
+  font-size: 23px;
+  font-family: 'Arapey', serif;
+}
+
+.events h3{
+  color: #000;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.events h4{
+  color: #fff;
+  background-color: #222;
+  font-size: 17px;
+  width: 37%;
+  padding: 7px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.events .section-hr{
+  padding-bottom: 30px;
+}
+
+.events .row{
+  padding-bottom: 30px;
+}
+
 /* ANIMATIONS */
 
 @keyframes flicker {
