@@ -183,6 +183,10 @@ body {
   color: #111;
 }
 
+.updates a:hover {
+  font-weight: 600;
+}
+
 .updates iframe {
   width: 100%;
   align-items: center;
@@ -324,6 +328,7 @@ span.highlight-span {
 
 .events-page {
   align-content: left;
+  margin-top: 15vh;
 }
 
 .events-page i {
@@ -361,6 +366,13 @@ span.highlight-span {
 .events-page ol {
   font-size: 20px;
   text-align: left;
+}
+
+.events-page button {
+  padding: 15px;
+  margin: 2vh;
+  background-color: #111;
+  color: #fff;
 }
 
 /*TEAM*/

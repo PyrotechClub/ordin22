@@ -1,15 +1,15 @@
 'use strict';
 
 //LOADER
-jQuery(document).on("scroll", function () {
+jQuery(document).on('scroll', function () {
   if ($(document).scrollTop() > 120) {
-      $(".navbar").css("background-color", "#222");
-      $(".nav-link").css("color", "#fff");
-      $(".nav-logo").css("filter", "none");
+    $('.navbar').css('background-color', '#222');
+    $('.nav-link').css('color', '#fff');
+    $('.nav-logo').css('filter', 'none');
   } else {
-      $(".navbar").css("background-color", "transparent");
-      $(".nav-link").css("color", "#000");
-      $(".nav-logo").css("filter", "invert(100%)");
+    $('.navbar').css('background-color', 'transparent');
+    $('.nav-link').css('color', '#000');
+    $('.nav-logo').css('filter', 'invert(100%)');
   }
 });
 
@@ -31,8 +31,6 @@ const countdown = () => {
   const textHour = Math.floor((gap % day) / hour);
   const textMinute = Math.floor((gap % hour) / minute);
   const textSecond = Math.floor((gap % minute) / second);
-
-  console.log(textDay, textHour, textMinute, textSecond);
 
   document.querySelector('.day').innerText = textDay;
   document.querySelector('.hour').innerText = textHour;
