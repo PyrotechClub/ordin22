@@ -387,6 +387,14 @@ span.highlight-span {
   color: #fff;
 }
 
+.events-page button:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.events-page a:hover {
+  color: #fff;
+}
+
 /*TEAM*/
 .heads-img {
   height: 35vh;
