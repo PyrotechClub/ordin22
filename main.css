@@ -469,42 +469,63 @@ span.highlight-span {
   font-family: 'Raleway', sans-serif;
 }
 
-/*CONTACT US*/
-
-.contact {
-  width: 100%;
-  overflow-x: hidden;
-  padding: 30px;
-  padding-top: 10vh;
+/*FOOTER*/
+#con{
   background-color: #111;
-  text-align: center;
-  color: rgb(231, 224, 224);
+  color:#eee;
+  padding-top: 5%;
+  margin-bottom: 0px;
+  text-align: left;
 }
 
-.contact i {
-  font-size: 8vh;
-  margin-bottom: 2vh;
+.footer{
+  background-color: #111;
+  color: #eee;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-align: left;
 }
 
-.contact h3 {
-  font-family: 'poppins', serif;
-  font-size: 3vh;
-  margin-top: 2vh;
+.footer .row{
+  padding: 1%;
 }
 
-.contact h4 {
-  font-size: 2.5vh;
+.footer .col-md-2{
+  padding: 1%;
 }
 
-.contact a:hover {
-  text-decoration: none;
-  color: rgb(231, 224, 224);
+.footer h1{
+  color: #eee;
+  font-size: 27px;
+  text-align: left;
 }
 
-.contact p {
-  margin-top: 15vh;
-  font-size: 2.5;
-  color: rgb(141, 131, 131);
+.footer p{
+  padding: 1%;
+  font-size: 15px;
+  color: #eee;
+}
+
+.footer h2{
+  padding: 1%;
+  font-size: 20px;
+  color: #eee;
+}
+
+.footer img{
+  height: 200px;
+  width: 75%;
+  transition: 0.4s;
+  padding-bottom: 2%;
+  padding: 1%;
+}
+
+.footer .section-hr{
+  color: #eee;
+}
+
+.footer img:hover{
+  transform: scaleX(1.1) scaleY(1.1);
 }
 
 /* ANIMATIONS */
