@@ -386,6 +386,44 @@ span.highlight-span {
   margin: 2vh;
 }
 
+/*CONTACT US*/
+
+.contact {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 30px;
+  padding-top: 10vh;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+}
+
+.contact i {
+  font-size: 8vh;
+}
+
+.contact h3 {
+  font-family: 'poppins', serif;
+  font-size: 3vh;
+  margin-top: 2vh;
+}
+
+.contact h4 {
+  font-size: 2.5vh;
+  margin-top: 2vh;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact p {
+  margin-top: 15vh;
+  font-size: 2.5;
+  color: rgb(141, 131, 131);
+}
+
 /* ANIMATIONS */
 
 @keyframes flicker {
