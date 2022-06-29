@@ -395,20 +395,28 @@ span.highlight-span {
   color: #fff;
 }
 
-/*TEAM*/
+/*TEAM
+.team{
+  width: 100%;
+  padding: 30px;
+}
+
+.team .box{
+  border: transparent;
+  padding: 20px;
+}
+
 .heads-img {
-  height: 35vh;
-  width: 35vh;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  margin: 3vh;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .team h3 {
   font-family: 'poppins', serif;
-  font-size: 3vh;
-  margin: 2vh;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -416,6 +424,49 @@ span.highlight-span {
   font-size: 2.5vh;
   font-style: italic;
   margin: 2vh;
+} */
+
+.team{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.team .section-hr {
+  color: #111;
+  width: 80%;
+  border-width: 3px;
+}
+
+.team .dabba{
+  border: transparent 1px solid;
+  padding: 15px;
+  transition: 0.4s;
+  margin: 20px;
+}
+
+.heads-img {
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 15px;
+}
+
+.team h3 {
+  font-family: 'poppins', serif;
+  font-size: 25px;
+}
+
+.team h4 {
+  font-size: 20px;
+}
+
+.team h5{
+  font-size: 17px;
+  color: #555;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*CONTACT US*/
