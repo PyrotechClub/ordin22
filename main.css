@@ -167,6 +167,18 @@ body {
 .nav-link {
   color: #000;
 }
+
+/*SCHEDULE MODAL*/
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-footer .btn {
+  background-color: #111;
+}
+
 /*UPDATES*/
 .updates {
   width: 100%;
@@ -407,11 +419,12 @@ span.highlight-span {
   padding-top: 10vh;
   background-color: #111;
   text-align: center;
-  color: #fff;
+  color: rgb(231, 224, 224);
 }
 
 .contact i {
   font-size: 8vh;
+  margin-bottom: 2vh;
 }
 
 .contact h3 {
@@ -422,12 +435,11 @@ span.highlight-span {
 
 .contact h4 {
   font-size: 2.5vh;
-  margin-top: 2vh;
 }
 
 .contact a:hover {
   text-decoration: none;
-  color: #fff;
+  color: rgb(231, 224, 224);
 }
 
 .contact p {

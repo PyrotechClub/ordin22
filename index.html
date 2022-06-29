@@ -26,6 +26,25 @@
 
 <body onload="load()">
 
+<!--SCHEDULE MODAL-->
+<div class="modal fade" id="schedule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        The schedule will be updated soon!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Got it!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--NAVBAR-->
+
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#home"><img class="d-inline-block align-text-top nav-logo"
@@ -52,7 +71,7 @@
             <a class="nav-link" href="team.html">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#schedule">Schedule</a>
+            <a class="nav-link" href="#schedule"> <span data-bs-toggle="modal" data-bs-target="#schedule">Schedule</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Us</a>
@@ -200,17 +219,19 @@
 
   <div class="row">
     <div class="col-md-3"></div>
-
-        <div class="col-md-3">
+    
+        <div class="col-md-2">
           <a href="https://www.instagram.com/pyrotech_tisvv/" target="_blank">
           <i class="fa-brands fa-instagram-square"></i>
-          <h3> Instagram </h3>
-          <h4> @pyrotech_tisvv </h4></a>
+          <h4>Follow us on <br> @pyrotech_tisvv </h4></a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <i class="fa-solid fa-envelope"></i>
-          <h3> Email </h3>
-          <h4> pyrotech@tagoreint.com</h4> 
+          <h4> <a href="mailto:pyrotech@tagoreint.com ">pyrotech@tagoreint.com </a> <br> <a href="mailto:info.vv@tagoreint.com">info.vv@tagoreint.com</a></h4> 
+        </div>
+        <div class="col-md-2">
+          <i class="fa-solid fa-phone"></i>
+          <h4><a href="tel:+91-011-26142270"> +91-011-26142270 </a><br> <a href="tel:+91-011-26149008">+91-011-26149008 </a></h4>
         </div>
 
     <div class="col-md-3"></div>
