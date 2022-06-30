@@ -1,6 +1,17 @@
 'use strict';
 
 //LOADER
+var myVar;
+function load() {
+  myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById('load').style.display = 'none';
+  document.getElementById('mainBod').style.display = 'block';
+}
+
+//NAVBAR
 jQuery(document).on('scroll', function () {
   if ($(document).scrollTop() > 120) {
     $('.navbar').css('background-color', '#222');

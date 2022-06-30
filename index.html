@@ -22,9 +22,25 @@
     rel="stylesheet">
 
   <title>Ordin@trix 22.0</title>
+  <link rel="icon" type="image/x-icon" href="lib/favicon.png">
 </head>
 
 <body onload="load()">
+
+  <!---  LOADER   --->
+
+  <div class="load" id="load">
+    <centre>
+        <div class="loader">
+            <div class="load1"></div>
+            <div class="load2"></div>
+            <div class="load3"></div>
+            <div class="load4"></div>
+            <div class="load5"></div>
+        </div>
+    </centre>
+</div>
+
 
 <!--SCHEDULE MODAL-->
 <div class="modal fade" id="schedule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -43,6 +59,7 @@
   </div>
 </div>
 
+<div class="mainBod" id="mainBod">
   <!--NAVBAR-->
 
   <nav class="navbar navbar-expand-lg fixed-top">
@@ -62,10 +79,13 @@
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
+            <a class="nav-link" href="#gen">General Guidelines</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#update">Updates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="team.html">Team</a>
@@ -74,7 +94,7 @@
             <a class="nav-link" href="#schedule"> <span data-bs-toggle="modal" data-bs-target="#schedule">Schedule</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link" href="#footer">Contact Us</a>
           </li>
       </div>
     </div>
@@ -159,6 +179,32 @@
 
   </div>
 
+  <!--GEN GUIDELINES-->
+  <div class="gen" id="gen">
+    <center>
+      <h1 class="section-title">GENERAL GUIDELINES</h1>
+      <hr class="section-hr">
+    </center>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <ul>
+          <li>ONLINE registrations will be done on a first come first serve basis.</li>
+          <li>The first 32 registrations will be accommodated in each event (except in Script@trix, Bot@trix, Anim@trix and Quest@trix)</li>
+          <li>Registrations will close on Tuesday, 19 July '22 by 5 PM. (Registration link has been provided above)</li>
+          <li>Registration timings (on the day of the event)- 8AM to 8:30 AM. In the event of a school reaching the venue late, timely information should be sent to the organisers.</li>
+          <li>Each school team must be accompanied by a teacher.</li>
+          <li>Each school must ensure that a student participates in only one event and that they register only one team per event. Only in Crypt@trix, individual and unlimited registrations will be entertained from the schools .</li>
+          <li>For all submission-based events, the entries must be mailed to the respective student event head.</li>
+          <li>Please refer to the Ordin@trix website (link below) for the latest updates on the events.</li>
+          <li>Decision of the organizers & jury members members regarding any issue related to Ordin@trix 22.0 will be FINAL AND BINDING on all schools and participants.</li>
+          <li>To qualify for the overall trophy, a school must take part in a minimum of 5 events (excluding Crypt@trix).</li>
+        </ul>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
   <!--UPDATES-->
   <div class="section updates" id="update">
     <center>
@@ -220,24 +266,26 @@
       <div class="col-md-4">
           <h1>HAVE ANY INQUIRIES?</h1>
           <p>Email: <br>
-            pyrotech@tagoreint.com <br>
-            info.vv@tagoreint.com <br><br>
+            <a href="mailto:pyrotech@tagoreint.com"> pyrotech@tagoreint.com </a><br>
+            <a href="info.vv@tagoreint.com">info.vv@tagoreint.com </a><br><br>
             Contact no.: <br>
             <a href="tel:+91-011-26142270"> +91-011-26142270 </a><br> <a href="tel:+91-011-26149008">+91-011-26149008 </a>
-        <br>  </p>
-          <p></p>
+        <br>  <br>
+      <a href="https://discord.gg/9AmqTspR" target="_blank">Join our discord server </a>
+      </p>
+         
       </div>
 
       <div class="col-md-3">
           <h1>ABOUT</h1>
-          <a href="about.html">
-         <img src="images/footer.png">
+          <a href="#about">
+         <img src="lib/nav-logo.png">
          </a>
       </div>
 
       <div class="col-md-3">
           <h1>SAY HI!</h1>
-          <p><b>Team Pyrotech</b><br><br>
+          <a href="team.html"><p><b>Team Pyrotech</b><br><br></a>
               Tagore International School, <br>Vasant Vihar <br><br>
           Made by: <br>
       Navya Arora <br>
@@ -257,6 +305,8 @@
           <div class="col-md-1"></div>
   </div>
 </div>
+
+<!--MAIN BODY--> </div>
 
   <!---LINKS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
