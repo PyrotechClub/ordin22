@@ -68,6 +68,7 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   padding: 0 !important;
+  background-image: url(lib/animatede.svg);
 }
 
 /*LOADER*/
