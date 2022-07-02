@@ -31,7 +31,7 @@ hr {
 
 .section-text {
   font-family: 'open sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 20px 0px;
 }
 
@@ -68,14 +68,9 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   padding: 0 !important;
-  background-image: url(lib/animatede.svg);
 }
 
 /*LOADER*/
-
-.mainBod {
-  display: none;
-}
 
 .loader {
   position: absolute;
@@ -83,18 +78,17 @@ body {
   left: 47%;
   width: 90px;
   height: 100px;
-  /* INCREASE HEIGHT */
 }
 
 .load {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
   background-color: #eee;
-}
-
-#load {
-  background-color: #eee;
-  z-index: 99999;
+  position: fixed;
+  transition: 1s ease-out;
+  top: 0;
+  left: 0;
 }
 
 .loader div {
@@ -243,6 +237,7 @@ body {
   padding: 10px 25px;
   background-color: transparent;
   transition: 0.25s;
+  z-index: 20;
 }
 .nav-link {
   margin: 0px 5px;
@@ -383,38 +378,53 @@ span.highlight-span {
   margin-top: 15vh;
 }
 
+.events .row {
+  display: flex;
+}
+
+.events .col-md-4 {
+  padding: 20px;
+  flex: 1;
+}
+
 .events .box {
-  background-color: #222;
-  border-radius: 10px;
-  padding: 50px 20px;
-  margin: 20px;
+  border: #222 3px solid;
+  padding: 40px 20px;
   cursor: pointer;
   transition: 0.3s;
+  height: 100%;
 }
 
 .events .icon {
   font-size: 90px;
   text-align: center;
-  color: #fff;
+  color: #111;
   padding: 20px;
 }
 
 .events h2 {
-  color: #fff;
+  color: #111;
   font-size: 23px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.event-hr {
+  opacity: 1;
+  width: 50%;
+  margin: 20px;
 }
 
 .events h3 {
-  color: #fff;
+  color: #111;
   font-size: 18px;
   font-family: 'Cabin', sans-serif;
   text-transform: capitalize;
 }
 
 .events .event-link {
-  color: #ffffff;
-  border: #ccc 3px solid;
+  color: #111;
+  border: #111 3px solid;
   width: 40%;
   padding: 7px;
   font-family: 'Cabin', sans-serif;
@@ -422,16 +432,16 @@ span.highlight-span {
 }
 
 .event-link:hover {
-  background-color: #ccc;
-  color: #111;
+  background-color: #111;
+  color: #fff;
 }
 
 .events .box:hover {
-  box-shadow: 0px 3px 3px #111;
+  box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
 }
 
 .event-a {
-  color: #aaa;
+  color: rgb(107, 107, 107);
 }
 
 /*EVENTS*/
@@ -493,40 +503,13 @@ span.highlight-span {
   color: #fff;
 }
 
-/*TEAM
-.team{
-  width: 100%;
-  padding: 30px;
-}
-
-.team .box{
-  border: transparent;
-  padding: 20px;
-}
-
-.heads-img {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.team h3 {
-  font-family: 'poppins', serif;
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.team h4 {
-  font-size: 2.5vh;
-  font-style: italic;
-  margin: 2vh;
-} */
+/*TEAM*/
 
 .team {
   width: 100%;
   overflow-x: hidden;
+  padding: 30px;
+  margin-top: 15vh;
 }
 
 .team .section-hr {
@@ -535,7 +518,7 @@ span.highlight-span {
   border-width: 3px;
 }
 
-.team .dabba {
+.team .team-member {
   border: transparent 1px solid;
   padding: 10px;
   transition: 0.4s;
@@ -548,23 +531,25 @@ span.highlight-span {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.4s;
-  margin: 10px;
+  margin: 20px;
 }
 
 .team h3 {
-  font-family: 'poppins', serif;
-  font-size: 17px;
+  font-family: 'apercu', sans-serif;
+  font-size: 1.5rem;
 }
 
 .team h4 {
-  font-size: 20px;
+  font-size: 1.2rem;
+  font-family: 'open-sans', sans-serif;
 }
 
 .team h5 {
-  font-size: 17px;
+  font-size: 1rem;
   color: #555;
   font-style: italic;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'cabin', sans-serif;
+  text-transform: capitalize;
 }
 
 /*FOOTER*/
@@ -584,30 +569,23 @@ span.highlight-span {
   text-align: left;
 }
 
-.footer .row {
-  padding: 1%;
-}
-
-.footer .col-md-2 {
-  padding: 1%;
-}
-
 .footer h1 {
   color: #eee;
-  font-size: 27px;
+  font-size: 1.5rem;
   text-align: left;
+  font-family: 'apercu', sans-serif;
 }
 
 .footer p {
-  padding: 1%;
-  font-size: 15px;
+  font-size: 1rem;
   color: #eee;
+  font-family: 'open-sans', sans-serif;
 }
 
 .footer h2 {
-  padding: 1%;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #eee;
+  font-family: 'open-sans', sans-serif;
 }
 
 .footer img {
@@ -615,6 +593,7 @@ span.highlight-span {
   transition: 0.4s;
   padding-bottom: 2%;
   padding: 1%;
+  transform: scale(0.9);
 }
 
 .footer .section-hr {
@@ -622,7 +601,7 @@ span.highlight-span {
 }
 
 .footer img:hover {
-  transform: scaleX(1.1) scaleY(1.1);
+  transform: scale(1);
 }
 
 .footer a:hover {

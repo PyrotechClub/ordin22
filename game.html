@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link href="main.css" type="text/css" rel="stylesheet" />
-    <script src="index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/515d438116.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Caslon+Text&family=Open+Sans&family=Oswald&family=Poiret+One&family=Poppins&family=Raleway:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Arapey&family=Kaushan+Script&family=Lato:wght@300&family=Open+Sans:wght@300;400&family=Poiret+One&family=Poppins:wght@200&family=Raleway:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <title>Ordin@trix | Game@trix</title>
-    <link rel="icon" type="image/x-icon" href="lib/favicon.png">
-  </head>
-  <body onload="load()">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <!---  LOADER   --->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link href="main.css" type="text/css" rel="stylesheet" />
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/515d438116.js" crossorigin="anonymous"></script>
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Caslon+Text&family=Open+Sans&family=Oswald&family=Poiret+One&family=Poppins&family=Raleway:ital@1&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Arapey&family=Kaushan+Script&family=Lato:wght@300&family=Open+Sans:wght@300;400&family=Poiret+One&family=Poppins:wght@200&family=Raleway:wght@200&display=swap"
+    rel="stylesheet" />
+  <title>Ordin@trix | Game@trix</title>
+  <link rel="icon" type="image/x-icon" href="lib/favicon.png">
+</head>
+
+<body onload="load()">
+
+  <!---  LOADER   --->
 
   <div class="load" id="load">
     <centre>
-        <div class="loader">
-            <div class="load1"></div>
-            <div class="load2"></div>
-            <div class="load3"></div>
-            <div class="load4"></div>
-            <div class="load5"></div>
-        </div>
+      <div class="loader">
+        <div class="load1"></div>
+        <div class="load2"></div>
+        <div class="load3"></div>
+        <div class="load4"></div>
+        <div class="load5"></div>
+      </div>
     </centre>
-</div>
+  </div>
 
-<div class="mainBod" id="mainBod">
+  <!--SCHEDULE MODAL-->
+  <div class="modal fade" id="schedule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The schedule will be updated soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!--NAVBAR-->
+  <div class="mainBod" id="mainBod">
+
+    <!--NAVBAR-->
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html#home"><img class="d-inline-block align-text-top nav-logo"
-                  src="lib/nav-logo.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="events.html">Events</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#update">Updates</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="team.html">Team</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="schedule.html">Schedule</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#contact">Contact Us</a>
-                  </li>
-          </div>
+        <a class="navbar-brand" href="index.html#home"><img class="d-inline-block align-text-top nav-logo"
+            src="lib/nav-logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#update">Updates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <span style="cursor: pointer;" class="nav-link" data-bs-toggle="modal"
+                data-bs-target="#schedule">Schedule</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
     <!--RULES-->
 
     <div class="section events-page">
@@ -99,53 +110,99 @@
           <hr class="section-hr" />
         </div>
         <div class="col-md-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-8">
-              <p>
-                Classes: 9-12 <br />
-                No of students in a team: 2 <br />
-                No of team allowed per school: 1 <br />
-                Mode: Online
-              </p>
-  
-              <ul>
-                <li>
-                  Game to be played is <b>BRAWLHALLA</b>  in a 2v2 mode. Each bracket will be the best of 3 match
-                </li> 
-                <li>  Minimum system requirements:
-                  <ol>
-                    <li>Intel core 2 Duo E8400</li>
-                    <li>Intel HD 3000</li>
-                    <li>1GB ram</li>
-                  </ol> </li>
-                <li> Date & timings: <b>9:30 am onwards, Monday, 1st August </b></li>
-                <li> Game code would be provided on the spot according to the time slots allotted to the team.</li> 
-                <li> Each participant must join the discord server for further updates.</li>
-                
-              </ul> 
-              <center><button><a href="https://discord.gg/pkFgaKVSaD" target="_blank">Join Game@trix discord server </a></button></center>
-
-            </div>
-            <div class="col-md-1"></div>
-        </div>
       </div>
 
-</div>
-    <!---LINKS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-    <script src="fontawesome.js"></script>
-  </body>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-8">
+          <p>
+            Classes: 9-12 <br />
+            No of students in a team: 2 <br />
+            No of team allowed per school: 1 <br />
+            Mode: Online
+          </p>
+
+          <ul>
+            <li>
+              Game to be played is <b>BRAWLHALLA</b> in a 2v2 mode. Each bracket will be the best of 3 match
+            </li>
+            <li> Minimum system requirements:
+              <ol>
+                <li>Intel core 2 Duo E8400</li>
+                <li>Intel HD 3000</li>
+                <li>1GB ram</li>
+              </ol>
+            </li>
+            <li> Date & timings: <b>9:30 am onwards, Monday, 1st August </b></li>
+            <li> Game code would be provided on the spot according to the time slots allotted to the team.</li>
+            <li> Each participant must join the discord server for further updates.</li>
+
+          </ul>
+          <center><button><a href="https://discord.gg/pkFgaKVSaD" target="_blank">Join Game@trix discord server
+              </a></button></center>
+
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="section fp-auto-height footer" id="footer">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <h1>HAVE ANY INQUIRIES?</h1>
+          <p>Email: <br>
+            <a href="mailto:pyrotech@tagoreint.com"> pyrotech@tagoreint.com </a><br>
+            <a href="info.vv@tagoreint.com">info.vv@tagoreint.com </a><br><br>
+            Contact no.: <br>
+            <a href="tel:+91-011-26142270"> +91-011-26142270 </a><br> <a href="tel:+91-011-26149008">+91-011-26149008
+            </a>
+            <br> <br>
+            <a href="https://discord.gg/9AmqTspR" target="_blank">Join our discord server </a>
+          </p>
+
+        </div>
+
+        <div class="col-md-3">
+          <h1>ABOUT</h1>
+          <a href="index.html#about">
+            <img src="lib/nav-logo.png">
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <h1>SAY HI!</h1>
+          <a href="https://teampyro.tech">
+            <p><b>Team Pyrotech</b><br><br>
+          </a>
+          Tagore International School, <br>Vasant Vihar <br><br>
+          Made by the Pyrotech Club
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <hr class="section-hr">
+          <h2>&copy; All rights reserved 2022</h2>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+  </div>
+  <!---LINKS-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+  <script src="fontawesome.js"></script>
+</body>
+
 </html>
