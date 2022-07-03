@@ -335,6 +335,11 @@ body {
   display: none;
 }
 
+.updates .shadow-insta:hover {
+  box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
+  transition: 0.3s;
+}
+
 /*ABOUT US*/
 
 .about {
