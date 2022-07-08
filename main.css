@@ -335,7 +335,11 @@ body {
   display: none;
 }
 
+<<<<<<< Updated upstream
 .updates .shadow-insta:hover {
+=======
+.shadow-insta:hover {
+>>>>>>> Stashed changes
   box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
   transition: 0.3s;
 }
