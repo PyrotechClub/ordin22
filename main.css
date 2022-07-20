@@ -335,11 +335,7 @@ body {
   display: none;
 }
 
-<<<<<<< Updated upstream
-.updates .shadow-insta:hover {
-=======
-.shadow-insta:hover {
->>>>>>> Stashed changes
+.updates .shadow-insta:hover .shadow-insta:hover {
   box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
   transition: 0.3s;
 }
@@ -560,6 +556,30 @@ span.highlight-span {
   font-style: italic;
   font-family: 'cabin', sans-serif;
   text-transform: capitalize;
+}
+
+/*SPONSORS*/
+
+.sponsors {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 30px;
+  padding-bottom: 70px;
+  justify-content: center;
+}
+
+.sponsors .section-hr {
+  margin-bottom: 70px;
+}
+
+.sponsors img {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 5vh;
+}
+
+.sponsors .taskade {
+  width: 75%;
 }
 
 /*FOOTER*/
